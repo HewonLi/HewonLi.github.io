@@ -36,7 +36,7 @@
 				height: 120px;
 				position: absolute;
 				background-image: url(img/anemy.png);
-				left: 0;
+				left: 0px;
 				top: 0;
 			}
 			.car2{
@@ -97,7 +97,6 @@
 				var scren = document.getElementsByClassName("screen")[0];
 				var oBtn2 = document.querySelectorAll("button")[1];
 				var mycar = document.getElementsByClassName("mycar")[0];
-//				var nowSecond;
 				document.onkeydown = function(ev){
 					var e = ev || window.event
 					if(e.keyCode==37){
@@ -115,48 +114,33 @@
 				}
 				var timer1 = null;
 				var timer2 = null;
-				var timer3 = null;
-				var timer4 = null;
-				
-//				setInterval(function(){
-//					nowSecond = new Date().getSeconds();
-//				    console.log(nowSecond)
-//				},1000)
-//				if((nowSecond%7)==0){
-//					nowSd=(nowSecond%7)*1000;
-//				}
 				oBtn2.onclick = function(){
 					clearInterval(timer1);
 					timer1 = setInterval(function(){
-						var car1 = document.createElement("img");
-						car1.setAttribute("class","car1")
-						scren.appendChild(car1);
-//						clearInterval(timer2);
-						timer2 = setInterval(function(){
-							car1.style.top = car1.offsetTop + 3 + "px"
-							if(mycar.offsetHeight+mycar.offsetTop<car1.offsetTop||mycar.offsetWidth+mycar.offsetLeft<car1.offsetLeft||mycar.offsetLeft>car1.offsetWidth+car1.offsetLeft||mycar.offsetTop>car1.offsetHeight+car1.offsetTop){
-							}
-							else{
-								alert("game over");
-							}
-						},30)
-					},1000)
-					clearInterval(timer3);
-					timer3 = setInterval(function(){
-						var car2 = document.createElement("img");
-						car2.setAttribute("class","car2")
-						scren.appendChild(car2);
-//						clearInterval(timer4);
-						timer4 = setInterval(function(){
-							car2.style.top = car2.offsetTop + 5 + "px"
-//							console.log(car2.offsetTop)
-							if(mycar.offsetHeight+mycar.offsetTop<car2.offsetTop||mycar.offsetWidth+mycar.offsetLeft<car2.offsetLeft||mycar.offsetLeft>car2.offsetWidth+car2.offsetLeft||mycar.offsetTop>car2.offsetHeight+car2.offsetTop){
-								
-							}else{
-								alert("game over");
-							}
+                        add();
+                        clearInterval(timer2 );
+                        timer2 = setInterval(function(){	                   
+							var  car11 = document.getElementsByClassName("car1");
+							for(var i=0;i<car11.length;i++){
+								car11[i].style.top = car11[i].offsetTop + 3 + "px"
+		                		if(mycar.offsetHeight+mycar.offsetTop<car11[i].offsetTop||mycar.offsetWidth+mycar.offsetLeft<car11[i].offsetLeft||mycar.offsetLeft>car11[i].offsetWidth+car11[i].offsetLeft||mycar.offsetTop>car11[i].offsetHeight+car11[i].offsetTop){
+		                			
+								}else{
+									alert("game over");
+								}						
+							}					
 						},30)
 					},3000)
+									
+					function add(){
+					    var  arr= ["0px","90px","180px"];
+	                    var  index = Math.floor(Math.random()*3);
+						car1 = document.createElement("img");
+						car1.setAttribute("class","car1");
+						scren.appendChild(car1);	
+						car1.style.left= arr[index]
+						car1.style.top= "-120px";					
+					}
 				}
 				
 			}
