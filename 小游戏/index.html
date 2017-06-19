@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.screen{
+				width: 270px;
+				height: 450px;
+				border-top:20px solid #00FF7F;
+				border-left: 40px solid #00FF7F;
+				border-right: 40px solid #00FF7F;
+				margin: 0 auto;
+				border-radius: 10px 10px 0 0;
+				position: relative;
+				background-color: rgba(0,0,0,.2);
+				overflow: hidden;
+			}
+			.screen .mycar{
+				width: 80px;
+				height: 120px;
+				position: absolute;
+				bottom: 0;
+				left: 92px;
+			}
+			.screen .mycar img{
+				width: 80px;
+				height: 120px;
+			}
+			.car1{
+				width: 85px;
+				height: 120px;
+				position: absolute;
+				background-image: url(img/anemy.png);
+				left: 0;
+				top: 0;
+			}
+			.car2{
+				width: 85px;
+				height: 120px;
+				position: absolute;
+				background-image: url(img/anemy.png);
+				left: 90px;
+				top: 0;
+			}
+			.control{
+				width: 350px;
+				height: 100px;
+				background-color: #00FF7F;
+				position: relative;
+				margin: 0 auto;
+			}
+			.control button{
+				width: 50px;
+				height: 50px;
+				border-radius:50% ;
+				font-family: "微软雅黑";
+				font-size: 25px;
+				position: absolute;
+				border: none;
+				top: 25px;
+			}
+			.control button:nth-of-type(1){
+			   	left: 100px;
+			}
+			.control button:nth-of-type(2){
+			   	left: 150px;
+			}
+			.control button:nth-of-type(3){
+			   	right: 100px;
+			}
+			.left_hand{
+				position: absolute;
+				margin: -50px 0 0 380px ;
+				width: 200px;
+				height: 140px;
+				background-color: #00FF7F;
+				transform: rotate(-45deg);
+				border-radius: 40px 0 0 40px;
+			}
+			.right_hand{
+				position: absolute;
+				margin: -50px 0 0 770px ;
+				width: 200px;
+				height: 140px;
+				background-color: #00FF7F;
+				transform: rotate(45deg);
+				border-radius: 0 40px 40px 0;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var scren = document.getElementsByClassName("screen")[0];
+				var oBtn2 = document.querySelectorAll("button")[1];
+				var mycar = document.getElementsByClassName("mycar")[0];
+//				var nowSecond;
+				document.onkeydown = function(ev){
+					var e = ev || window.event
+					if(e.keyCode==37){
+						if(mycar.offsetLeft<=91){
+							mycar.style.left = 91 +"px"; 
+						}
+						mycar.style.left = mycar.offsetLeft - 88 + "px"
+					}
+					if(e.keyCode==39){
+						if(mycar.offsetLeft>=92){
+							mycar.style.left = 92 + "px"; 
+						}
+						mycar.style.left = mycar.offsetLeft + 88 + "px"
+					}
+				}
+				var timer1 = null;
+				var timer2 = null;
+				var timer3 = null;
+				var timer4 = null;
+				
+//				setInterval(function(){
+//					nowSecond = new Date().getSeconds();
+//				    console.log(nowSecond)
+//				},1000)
+//				if((nowSecond%7)==0){
+//					nowSd=(nowSecond%7)*1000;
+//				}
+				oBtn2.onclick = function(){
+					clearInterval(timer1);
+					timer1 = setInterval(function(){
+						var car1 = document.createElement("img");
+						car1.setAttribute("class","car1")
+						scren.appendChild(car1);
+//						clearInterval(timer2);
+						timer2 = setInterval(function(){
+							car1.style.top = car1.offsetTop + 3 + "px"
+							if(mycar.offsetHeight+mycar.offsetTop<car1.offsetTop||mycar.offsetWidth+mycar.offsetLeft<car1.offsetLeft||mycar.offsetLeft>car1.offsetWidth+car1.offsetLeft||mycar.offsetTop>car1.offsetHeight+car1.offsetTop){
+							}
+							else{
+								alert("game over");
+							}
+						},30)
+					},1000)
+					clearInterval(timer3);
+					timer3 = setInterval(function(){
+						var car2 = document.createElement("img");
+						car2.setAttribute("class","car2")
+						scren.appendChild(car2);
+//						clearInterval(timer4);
+						timer4 = setInterval(function(){
+							car2.style.top = car2.offsetTop + 5 + "px"
+//							console.log(car2.offsetTop)
+							if(mycar.offsetHeight+mycar.offsetTop<car2.offsetTop||mycar.offsetWidth+mycar.offsetLeft<car2.offsetLeft||mycar.offsetLeft>car2.offsetWidth+car2.offsetLeft||mycar.offsetTop>car2.offsetHeight+car2.offsetTop){
+								
+							}else{
+								alert("game over");
+							}
+						},30)
+					},3000)
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<div class="screen">
+			<div class="mycar"><img src="img/mycar.png"/>	</div>
+		</div>
+		<div class="control">
+			<button>&lt;</button>
+			<button>开始</button>
+			<button>&gt;</button>
+		</div>
+		<div class="left_hand"></div>
+		<div class="right_hand"></div>
+	</body>
+</html>
