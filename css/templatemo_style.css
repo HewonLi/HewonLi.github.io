@@ -44,7 +44,9 @@ header #templatemo_logo {
     float: left;
 }
 header #templatemo_logo img {
-    width: 100%;
+    /*width: 100%;*/
+    width: 164px;
+    height: 55px;
 }
 header ul {
     float: left;
@@ -200,6 +202,9 @@ header .nav li a:hover, header .nav li a:focus {
     padding-bottom: 30px;
 }
 /*templatemo_blog*/
+#templatemo_blog img{
+	width: 300px;
+}
 #templatemo_blog p {
     color: #000;
     text-align: justify;
@@ -208,6 +213,7 @@ header .nav li a:hover, header .nav li a:focus {
 #templatemo_blog a {
     color: black;
     text-decoration: none;
+    color: #9e2630;
 }
 #templatemo_blog a span {
     font-size: 10px;
