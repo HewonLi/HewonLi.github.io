@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>productList</title>
+<link type="text/css" rel="stylesheet" href="css/productList.css">
+<script>
+window.onload = function(){
+	document.getElementsByClassName("txt")[0].onfocus = function(){
+		this.previousElementSibling.style.display = "none";
+		this.onblur = function(){
+			if(this.value == ''){
+				this.previousElementSibling.style.display = "block";
+			}
+		}
+	}	
+}
+</script>
+</head>
+
+<body>
+<div id="header">
+	<div class="logo">
+    	<img src="images/logo_03.gif">
+	</div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">手机</a></li>  
+            <li><a href="#">配件</a></li>  
+            <li><a href="#">服务</a></li>  
+            <li><a href="#">下载</a></li> 
+            <li><a href="#">社区</a></li>     
+        </ul>
+    </div>
+    
+    <div class="login_box">
+        <a href="#">您好，请登录</a>
+        <span>|</span>
+        <a href="#">注册</a>
+        <img src="images/shoppCar_03.gif">
+        <a href="#">购物车</a>
+    </div>
+    <div class="search_box">
+        <label>
+        	<span>输入搜索的内容</span><input type="text" class="txt">
+        </label>
+        <input type="button" class="putIn">
+    </div>
+</div>
+<div id="banner">
+	<img src="images/banner.jpg">
+</div>
+<div id="content">
+	<div class="select">
+    	<ul>
+        	<li>手机分类：</li>
+            <li><input type="checkbox">全部</li>
+            <li><input type="checkbox">智能手机</li>
+            <li><input type="checkbox">功能手机</li>
+           
+        </ul>
+        <ul>
+        	<li>手机外观：</li>
+            <li><input type="checkbox">全部</li>
+            <li><input type="checkbox">触屏</li>
+            <li><input type="checkbox">直板</li>
+            <li><input type="checkbox">翻盖</li>
+        </ul>
+        <ul>
+        	<li>手机系列：</li>
+            <li><input type="checkbox">全部</li>
+            <li><input type="checkbox">ELIFE系列</li>
+            <li><input type="checkbox">天鉴系列</li>
+            <li><input type="checkbox">风华系列</li>
+            <li><input type="checkbox">语音王系列</li>
+            <li><input type="checkbox">+能量系列</li>
+            <li><input type="checkbox">大屏系列</li>
+            <li><input type="checkbox">其他系列</li> 
+        </ul>
+        <ul style="border:none;">
+        	<li>排列方式：</li>
+            <li><input type="checkbox">上架时间</li>
+            <li><input type="checkbox">价格</li>
+            <li><input type="checkbox">销量</li>
+        </ul>
+    </div>
+	<div class="phone_list">
+    	<div class="list_one">
+        	<div class="list_one_phone">
+            	<a href="#"><img src="images/list_one_03.gif"></a>
+                <h4>ELIFE S5.1</h4>
+                <span>5.15mm超薄智能手机</span>
+                <p>￥1999</p>
+            </div>
+            <div class="list_one_phone">
+            	<a href="#"><img src="images/elife_03.gif"></a>
+                <h4>ELIFE S5.5L</h4>
+                <span>5.15mm超薄智能手机,至薄4G智能手机</span>
+                <p>￥2299</p>
+            </div>
+            <div class="list_one_phone">
+            	<a href="#"><img src="images/gn715_03.gif"></a>
+                <h4>ELIFE E7L(16G)</h4>
+                <span>1600万象素4G手机</span>
+                <p>￥2699</p>
+            </div>
+            <div class="list_one_phone" style="border-right:none;">
+            	<a href="#"><img src="images/list_one_03.gif"></a>
+                <h4>GN715</h4>
+                <span>多频段手机，前置500万象素+补光灯</span>
+                <p>￥1699</p>
+            </div>
+        </div> <!--第一行手机-->
+        <div class="list_one">
+        	<div class="list_one_phone">
+            	<a href="#"><img src="images/l1_03.gif"></a>
+                <h4>金立v188</h4>
+                <span>5200mAh超大电量，30天超长待机</span>
+                <p>￥1499</p>
+            </div>
+            <div class="list_one_phone">
+            	<a href="#"><img src="images/l2_03.gif"></a>
+                <h4>金立w800</h4>
+                <span>真皮双触屏智能商务手机</span>
+                <p>￥2999</p>
+            </div>
+            <div class="list_one_phone">
+            	<a href="#"><img src="images/l3_03.gif"></a>
+                <h4>金立Q1</h4>
+                <span>送父母，马上就有金</span>
+                <p><a href="#">查看详情</a></p>
+            </div>
+            <div class="list_one_phone" style="border-right:none;">
+            	<a href="#"><img src="images/l3_03.gif"></a>
+                <h4>金立A809</h4>
+                <span>经典翻盖，超长待机</span>
+                <p><a href="#">查看详情</a></p>
+            </div>
+        </div> <!--第二行手机-->
+        <div class="list_one">
+        	<div class="list_one_phone">
+            	<a href="#"><img src="images/l4_03.gif"></a>
+                <h4>ELIFE S5.5</h4>
+                <span>5.15mm超薄智能手机</span>
+             	<p><a href="#">查看详情</a></p>
+            </div>
+            <div class="list_one_phone">
+            	<a href="#"><img src="images/l5_03.gif"></a>
+                <h4>ELIFE E7 minin</h4>
+                <span>自由拍，反正都精彩</span>
+                <p><a href="#">查看详情</a></p>
+            </div>
+            <div class="list_one_phone">
+            	<a href="#"><img src="images/l6_03.gif"></a>
+                <h4>ELIFE 大眼E7(16G版)</h4>
+                <span>1600万象素手机（3G RAM+32G ROM）</span>
+          		<p><a href="#">查看详情</a></p>
+            </div>
+            <div class="list_one_phone" style="border-right:none;">
+            	<a href="#"><img src="images/l6_03.gif"></a>
+                <h4>ELIFE 大眼E7(32G版)</h4>
+                <span>1600万象素手机（3G RAM+32G ROM）</span>
+                <p><a href="#">查看详情</a></p>
+            </div>
+        </div> <!--第三行手机-->
+    </div>
+
+    <div class="page_btn">
+    	<div class="page_num">
+        <input type="button" value="1">
+        <input type="button" value="2">
+        <input type="button" value="3">
+        <input type="button" value="4">
+        <input type="button" value="5">
+        <input type="button" value="下一页" class="next">
+        </div>
+    </div>
+</div>
+<div id="seven">
+	<dl>
+        <dt><img src="images/s1_03.gif"></dt>
+        <dd><a href="#"><p>7天</p><p>退货保证</p></a></dd>
+    </dl>
+    <dl>
+        <dt><img src="images/s1_03.gif"></dt>
+        <dd><a href="#"><p>30天</p><p>退货保证</p></a></dd>
+    </dl>
+    <dl>
+        <dt><img src="images/s2_03.gif"></dt>
+        <dd><a href="#"><p>99元起</p><p>全场免运费</p></a></dd>
+    </dl>
+    <dl>
+        <dt><img src="images/s1_03.gif"></dt>
+        <dd><a href="#"><p>586家</p><p>售后服务点</p></a></dd>
+    </dl>
+</div>
+<div id="about">
+	<ul>
+    	<h4>关于金立</h4>
+    	<li><a href="#">企业荣誉</a></li>
+        <li><a href="#">金立体验店</a></li>
+        <li><a href="#">代理商专区</a></li>
+        <li><a href="#">加入金立</a></li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+    <ul>
+    	<h4>新闻资讯</h4>
+    	<li><a href="#">公司新闻</a></li>
+        <li><a href="#">媒体报道</a></li>
+        <li><a href="#">金立月刊</a></li>
+    </ul>
+    <ul>
+    	<h4>购物指南</h4>
+    	<li><a href="#">购物流程</a></li>
+        <li><a href="#">支付方式</a></li>
+        <li><a href="#">配送说明及费用</a></li>
+        <li><a href="#">订单管理</a></li>
+        <li><a href="#">常见购买问题</a></li>
+    </ul>
+    <ul>
+    	<h4>售后服务</h4>
+    	<li><a href="#">售后政策</a></li>
+        <li><a href="#">销售服务网点</a></li>
+        <li><a href="#">签收须知</a></li>
+        <li><a href="#">物流查询</a></li>
+    </ul>
+    <ul>
+    	<h4>关注我们</h4>
+    	<li><a href="#">新浪微博</a></li>
+        <li><a href="#">腾讯微博</a></li>
+        <li><a href="#">QQ空间</a></li>
+        <li><a href="#">加入金立</a></li>
+    </ul>
+    <ul class="mask">
+    	<li><img src="images/erweima_10.gif"></li>
+    </ul>
+</div>
+
+</body>
+</html>
