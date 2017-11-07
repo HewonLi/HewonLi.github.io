@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>威特</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/password_reset.css"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+<div class="topbar">
+	<div class="container">
+	    <div class="topbar_content">
+	        <div class="topbar_left">
+	            <div class="topbar_detail">
+	                <span class="fs-12"> 市场概况</span><span class="iconfont">&#xe600;</span>
+	            </div>
+	            <div class="topbar_data">
+	                <span class="color-999">BTC/USD:</span>
+	                <i class="color-red">$</i>
+	                <span class="color-red">4145.00</span>
+	                <i class="iconfont color-red fs-12" >&#xe62a;</i>
+	            </div>
+	            <div class="topbar_data">
+	                <span class="color-999">BTC/USD:</span>
+	                <i class="color-red">$</i>
+	                <span class="color-red">4145.00</span>
+	                <i class="iconfont color-red fs-12" >&#xe62a;</i>
+	            </div>
+	            <div class="topbar_data">
+	                <span class="color-999">BTC/USD:</span>
+	                <i class="color-red">$</i>
+	                <span class="color-red">4145.00</span>
+	                <i class="iconfont color-red fs-12" >&#xe62a;</i>
+	            </div>
+	            <div class="topbar_data">
+	                <span class="color-999">BTC/USD:</span>
+	                <i class="color-red">$</i>
+	                <span class="color-red">4145.00</span>
+	                <i class="iconfont color-red fs-12" >&#xe62a;</i>
+	            </div>
+	            <div class="topbar_data">
+	                <span class="color-999">BTC/USD:</span>
+	                <i class="color-red">$</i>
+	                <span class="color-red">4145.00</span>
+	                <i class="iconfont color-red fs-12" >&#xe62a;</i>
+	            </div>
+	        </div>
+	        <div class="topbar_right">
+	            <div class="topbar_nav">
+	                <ul>
+	                    <li class="language">
+	                        <a href="javascript:;"><span class="language_icon"></span><i class="iconfont" >&#xe600;</i></a>
+	                        <ul class="changeLanguage">
+	                            <li><a href="javascript:;" ><span class="chinese_icon"></span></a></li>
+	                            <li><a href="javascript:;"><span class="usa_icon"></span></a></li>
+	                        </ul>
+	                    </li>
+	                </ul>
+	            </div>
+				<div class="topbar_more">
+					<a href="javascript:;">
+						<span>更多</span>
+						<i class="iconfont">&#xe600;</i>
+					</a>
+					<ul>
+						<li><a href="#">新手指导</a></li>
+						<li><a href="#">资金安全</a></li>
+						<li><a href="#">公告中心</a></li>
+						<li><a href="#">费率标准</a></li>
+					</ul>
+					<div class="square"></div>
+				</div>
+	            <div class="topbar_login" style="display: block;">
+	                <a href="../login.html">登录</a>
+	                <a href="../register.html" class="topbar_active">注册</a>
+	            </div>
+	            <div class="topbar_logined" style="display: none;">
+	            	<a href="#" class="nickname">15988880436</a>
+	            	<a href="#"class="loginout">退出</a>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+<!--第一页-->
+<div class="min_height">
+<div class="bg section1" style="display: block;">
+	<div class="codeBody container">
+		<div class="registerHeader">
+	        <a href="index.html">
+	            <img src="../images/logo.png" alt="">
+	        </a>
+	    </div>
+		<div class="codeSearchMainBody">
+			<div class="stepTitle">
+				<p class="title" style="">重置登录密码</p>
+			</div>
+			<div class="Information" id="query_email_or_phone" style="display: block;">
+				<div class="information_wrap">
+					<!--<form action="" method="post">-->
+						<span class="leftDistance6">
+							<!--<p class="generality">您的用户名:</p>-->
+							<i class="glyphicon glyphicon-user"></i>
+							<input id="uemail" class="uemail" name="uemail" type="text"  class="inputName" placeholder="请输入手机号/邮箱">
+						</span>
+						<span class="leftDistance6" >
+							<!--<p class=" generality">设置新密码:</p>-->
+							<i class="glyphicon glyphicon-lock"></i>
+							<input id="newPassword" type="password" class="inputName uemail" value=""placeholder="请输入您的新密码">
+						</span>
+						<span class="leftDistance6">
+							<!--<p class=" generality">确认新密码:</p>-->
+							<i class="glyphicon glyphicon-lock"></i>
+							<input id="newPassword2" type="password" class="inputName uemail" value=""placeholder="请再次输入您的新密码">
+						</span>
+						<span class="leftDistance6">
+							<!--<p class="generality">验证码:</p>-->
+							<span class="codeSpan">
+								<i class="glyphicon glyphicon-send"></i>
+								<input id="code_input" type="text" class="inputName code"placeholder="请输入图形码">
+								<div id="v_container"></div>
+								<button id="my_button" class="" type=""style=""> 发送验证码 </button>
+							</span>
+						</span>
+						<span class="leftDistance6">
+							<!--<p class="generality">短信验证码:</p>-->
+							<i class="glyphicon glyphicon-eye-open"></i>
+							<input class="inputName uemail" name="phoneCode" id="phoneCode" type="text"placeholder="请输入短信验证码" onkeydown="callbackEnter(resetPassword);">
+						</span>
+						<span class="generality">
+							<input class="codeSearchButton" type="submit" id="subphone" value="提交" style="" onclick="javascript:queryEmail();">
+						</span>
+					<!--</form>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--第四页-->
+<div class="bg section4"style="display: none;">
+	<div class="codeBody container">
+		<div class="registerHeader">
+	        <a href="index.html">
+	            <img src="../images/logo.png" alt="">
+	        </a>
+	    </div>
+		<div class="codeSearchMainBody">
+			
+			<div class="stepTitle">
+				<p class="title" style="">重置登录密码</p>
+			</div>
+			<div class="Information" id="query_email_or_phone" style="display: block;">
+				<div class="information_wrap">
+					<p style="font-size: 25px;margin: 100px 0px 50px 15px;color: #fff;">恭喜您密码已经修改成功</p>
+					<span class="generality">
+						<a class="codeResetButton" href="../index.html" onclick="submitResetCode()"style="margin-left: 88px;" >返回首页</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <p>****科技有限公司</p>
+        <p>Copyright &copy;1998-2017WEITE All Right Reserve</p>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$("#subphone").click(function(){
+		$(".bg").css("display","none");
+		$(".section4").css("display","block")
+	})
+	
+</script>
+<!--验证码插件-->
+<script src="../js/gVerify.js"></script>
+<script>
+	var verifyCode = new GVerify("v_container");
+	document.getElementById("my_button").onclick = function(){
+		var res = verifyCode.validate(document.getElementById("code_input").value);
+		if(res){
+			alert("验证正确");
+		}else{
+			alert("验证码错误");
+		}
+	}
+</script>
+<script src="../js/common.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

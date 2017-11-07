@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>威特</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/trade.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="topbar">
+    <div class="container">
+        <div class="topbar_content">
+            <div class="topbar_left">
+                <div class="topbar_detail">
+                    <span class="fs-12"> 市场概况</span><span class="iconfont">&#xe600;</span>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+            </div>
+            <div class="topbar_right">
+                <div class="topbar_nav">
+                    <ul>
+                        <li class="language">
+                            <a href="javascript:;"><span class="language_icon"></span><i class="iconfont" >&#xe600;</i></a>
+                            <ul class="changeLanguage">
+                                <li><a href="javascript:;" ><span class="chinese_icon"></span></a></li>
+                                <li><a href="javascript:;"><span class="usa_icon"></span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topbar_more">
+                    <a href="javascript:;">
+                        <span>更多</span>
+                        <i class="iconfont">&#xe600;</i>
+                    </a>
+                    <ul>
+                        <li><a href="#">新手指导</a></li>
+                        <li><a href="#">资金安全</a></li>
+                        <li><a href="#">公告中心</a></li>
+                        <li><a href="#">费率标准</a></li>
+                    </ul>
+                    <div class="square"></div>
+                </div>
+                 <div class="topbar_login" style="display: none;">
+	                <a href="#">登录</a>
+	                <a href="register.html" class="topbar_active">注册</a>
+	            </div>
+	            <div class="topbar_logined" style="display: block;">
+	            	<a href="#" class="nickname">15988880436</a>
+	            	<a href="#"class="loginout">退出</a>
+	            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="container ">
+        <div class="header_content">
+            <div class="header_left" >
+                <div class="header_logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="headerSelectCoin">
+                    <span>美元</span>
+                    <i class="iconfont">&#xe600;</i>
+                    <ul>
+                        <li>美元</li>
+                        <li>人民币</li>
+                        <li>币值交易</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_right">
+                <ul>
+                    <li><a href="index.html" class="">首页</a></li>
+                    <li><a href="trade.html"class="header_active">交易中心</a></li>
+                    <li><a href="accountbalance.html">委托管理</a></li>
+                    <li><a href="user.html">个人中心</a></li>
+                    <li><a href="information.html">资讯</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tradeBox">
+    <div class="container">
+        <div id="main" style="width: 100%;height:500px;margin-bottom: 20px"></div>
+        <div class="tradeCentent">
+            <div class="tradeCententOperate">
+                <div class="OperateData">
+                    <div class="OperateDataTab" >
+                        <ul>
+                            <li class="OperateDataTabActive">最新出售</li>
+                            <li>最新交易记录</li>
+                        </ul>
+                    </div>
+                    <div class="OperateDataContent" id="OperateDataContent">
+                        <div class="newSell">
+                            <div class="newSellTable">
+                                <table class="table table-bordered table-striped ">
+                                    <thead>
+                                    <tr>
+                                        <th>类型</th>
+                                        <th>价格</th>
+                                        <th>委单量</th>
+                                        <th>余量</th>
+                                        <th></th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">卖一</th>
+                                        <td>55.76</td>
+                                        <td>51</td>
+                                        <td>5</td>
+                                        <td class="progressTD">
+                                            <div class="progress" style="width: 80%;">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 0">
+                                            <button class="buyAllBtn">BUY ALL</button>
+                                        </td>
+
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div style="display: none"  class="newTradeRecord">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>类型</th>
+                                    <th>价格</th>
+                                    <th>委单量</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">买1</th>
+                                    <td>2900.00</td>
+                                    <td class="weidanliang">0.2541</td>
+                                    <td>
+                                        <div class="progress" style="width: 80%;">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">买1</th>
+                                    <td>2900.00</td>
+                                    <td class="weidanliang">0.2541</td>
+                                    <td>
+                                        <div class="progress" style="width: 80%;">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                <span class="sr-only">40% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">买1</th>
+                                    <td>2900.00</td>
+                                    <td class="weidanliang">0.2541</td>
+                                    <td>
+                                        <div class="progress" style="width: 80%;">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                <span class="sr-only">40% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">买1</th>
+                                    <td>2900.00</td>
+                                    <td class="weidanliang">0.2541</td>
+                                    <td>
+                                        <div class="progress" style="width: 80%;">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                <span class="sr-only">40% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">买1</th>
+                                    <td>2900.00</td>
+                                    <td class="weidanliang">0.2541</td>
+                                    <td>
+                                        <div class="progress" style="width: 80%;">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                <span class="sr-only">40% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">买1</th>
+                                    <td>2900.00</td>
+                                    <td class="weidanliang">0.2541</td>
+                                    <td>
+                                        <div class="progress" style="width: 80%;">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                <span class="sr-only">40% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">买1</th>
+                                    <td>2900.00</td>
+                                    <td class="weidanliang">0.2541</td>
+                                    <td>
+                                        <div class="progress" style="width: 80%;">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                <span class="sr-only">40% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">买1</th>
+                                    <td>2900.00</td>
+                                    <td class="weidanliang">0.2541</td>
+                                    <td>
+                                        <div class="progress" style="width: 80%;">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                <span class="sr-only">40% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">买1</th>
+                                    <td>2900.00</td>
+                                    <td class="weidanliang">0.2541</td>
+                                    <td>
+                                        <div class="progress" style="width: 80%;">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                <span class="sr-only">40% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="OperateBox">
+                    <div class="Operate">
+                            <div class="WayContent">
+                                <div class="tradeTitle">
+                                    <div class="tradeTitleLeft">
+                                        <span class="iconfont">&#xe603;</span><span>交易中心</span>
+                                    </div>
+                                    <div class="tradeTitleRight">
+                                        <a href=""><span class="iconfont">&#xe656;</span>K线交易</a>
+                                        <a href=""><span class="iconfont">&#xe603;</span>全球行情</a>
+                                        <a href=""><span class="iconfont">&#xe6c2;</span>币种资料</a>
+                                    </div>
+                                </div>
+                                <div class="tradeData_Box">
+                                    <ul>
+                                        <li>可用: <span class="color-red">--</span>CNY</li>
+                                        <li>可卖: <span>--</span>CNY</li>
+                                        <li>可用: <span class="color-green">--</span>BTC</li>
+                                        <li>可买: <span>--</span>BTC</li>
+                                    </ul>
+                                    <div class="tradeDataCenter">
+                                        <p>￥24758.00 <span class="iconfont">&#xe737;</span></p>
+                                        <div>
+                                            <p><span>高：</span>￥2550.00<span></span></p>
+                                            <p><span>低：</span>￥2150.00<span></span></p>
+                                            <p><span>量：</span>3350.00<span></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wayInputBox">
+                                    <div class="WayInput">
+                                        <span>价格</span>
+                                        <input type="text" placeholder="CNY">
+                                        <span class="color-red" style="font-weight: 600"> 55.00</span>
+                                    </div>
+                                    <div class="WayInput">
+                                        <span>数量</span>
+                                        <input type="text" placeholder="OFC">
+                                    </div>
+                                    <div class="WayInput">
+                                        <span>总金额</span>
+                                        <input type="text" placeholder="CNY">
+                                    </div>
+                                    <div class="WayInput">
+                                        <span>安全密码</span>
+                                        <input type="password" placeholder="请输入安全密码">
+                                    </div>
+                                </div>
+                                <p class="tradingVolume">
+                                    <span>预计交易额：</span>
+                                    <span class="color-red" style="margin: 0 3px">0.00</span>
+                                    <span>CNY</span></p>
+                                <div class="tradeBtn">
+                                    <button class="tradeBuyBtn">立即买入</button>
+                                    <button class="tradeSellBtn">立即卖出</button>
+                                </div>
+
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tradeCententEntrust">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="EntrustWay" id="EntrustWay">
+                            <ul style="width: 200px;">
+                                <li class="EntrustWayActive">限价委托</li>
+                                <li>计划委托</li>
+                            </ul>
+                            <a href="" class="color-red"><span class="iconfont" style="font-size: 14px;margin-right: 5px">&#xe64d;</span>更多记录</a>
+                        </div>
+                        <div id="EntrustWayForm" style="height: 350px">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>委托时间</th>
+                                    <th>委托数量/已成交的BTC</th>
+                                    <th>委托价格/成交均价(CNY)</th>
+                                    <th>成交总额</th>
+                                    <th>状态</th>
+                                    <th>订单来源</th>
+                                    <th>操作 <span class="color-green">[批量操作]</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>100</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>100</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>100</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>100</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>100</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>100</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>100</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>100</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-striped table-bordered" style="display: none">
+                                <thead>
+                                <tr>
+                                    <th>委托时间</th>
+                                    <th>委托数量/已成交的BTC</th>
+                                    <th>委托价格/成交均价(CNY)</th>
+                                    <th>成交总额</th>
+                                    <th>状态</th>
+                                    <th>订单来源</th>
+                                    <th>操作 <span class="color-green">[批量操作]</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>200</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>200</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>200</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>200</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>200</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>200</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2017-9-30</th>
+                                    <td>200</td>
+                                    <td>53.10</td>
+                                    <td>1000.36</td>
+                                    <td>状态</td>
+                                    <td>订单来源</td>
+                                    <td>操作</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <p>****科技有限公司</p>
+        <p>Copyright &copy;1998-2017WEITE All Right Reserve</p>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/echarts.js"></script>
+<script>
+    var myChart = echarts.init(document.getElementById('main'));
+    function splitData(rawData) {
+        var categoryData = [];
+        var values = [];
+        var volumns = [];
+        var MA5 = [];
+        var MA10 = [];
+        var MA20 = [];
+        var MA30 = [];
+        for (var i = 0; i < rawData.length; i++) {
+            categoryData.push(rawData[i].splice(0, 1)[0]);
+            values.unshift([
+                rawData[i][0],
+                rawData[i][1],
+                rawData[i][2],
+                rawData[i][3]
+            ])
+            volumns.push(rawData[i][4]);
+        }
+        MA5 = calculateMA(5, values);
+        MA10 = calculateMA(10, values);
+        MA20 = calculateMA(20, values);
+        MA30 = calculateMA(30, values);
+        /*$(".MA-points .MA5-point").text("MA5:"+MA5[MA5.length-1]);
+         $(".MA-points .MA10-point").text("MA10:"+MA10[MA10.length-1]);
+         $(".MA-points .MA20-point").text("MA20:"+MA20[MA20.length-1]);
+         $(".MA-points .MA30-point").text("MA30:"+MA30[MA30.length-1]);*/
+        return {
+            categoryData: categoryData,
+            values: values,
+            MA5:MA5,
+            MA10:MA10,
+            MA20:MA20,
+            MA30:MA30,
+            volumns:volumns
+        };
+    }
+
+
+    function calculateMA(dayCount, data) {
+        var result = [];
+        for (var i = 0, len = data.length; i < len; i++) {
+            if (i < dayCount) {
+                result.unshift('-');
+                continue;
+            }
+            var sum = 0;
+            for (var j = 0; j < dayCount; j++) {
+                sum += data[i - j][1];
+            }
+            result.push(+(sum / dayCount).toFixed(2));
+        }
+        return result;
+    }
+
+    $.get('data/stock-DJI.json', function (rawData) {
+
+        var data = splitData(rawData);
+
+        myChart.setOption(option = {
+            backgroundColor: '#0a0a0a',
+            animation: false,
+            tooltip: {
+                position:[0,0],
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross',
+                    crossStyle:{
+                        "color": "#aaaaaa",
+                        "width": 1,
+                        "type": "solid"
+                    }
+                },
+                backgroundColor: '#oaoaoa',
+                textStyle: {
+                    color: '#cccccc',
+                    fontSize:'12'
+                },
+                formatter: function(param) {
+                    var allData = {};
+                    param.forEach(function(v, i) {
+                        allData[v.seriesName] = v;
+                    })
+                    /*$(".MA-points .MA5-point").text("MA5:"+allData.MA5.data);
+                     $(".MA-points .MA10-point").text("MA10:"+allData.MA10.data);
+                     $(".MA-points .MA20-point").text("MA20:"+allData.MA20.data);
+                     $(".MA-points .MA30-point").text("MA30:"+allData.MA30.data);*/
+                    console.log(allData)
+                    return [
+                        '<span style="margin-right: 10px">'+ '时间: ' + allData.candlestick.name+'</span>' ,
+                        '<span style="margin-right: 10px">'+ '开盘价: ' + allData.candlestick.data[1]+'</span>'  ,
+                        '<span style="margin-right: 10px">'+ '收盘价: ' + allData.candlestick.data[2]+'</span>'  ,
+                        '<span style="margin-right: 10px">'+ '最低价: ' + allData.candlestick.data[3] +'</span>' ,
+                        '<span style="margin-right: 10px">'+ '最高价: ' + allData.candlestick.data[4]+'</span>' ,
+                        '<span style="margin-right: 10px">'+ 'MA5: ' + allData.MA5.data+'</span>' ,
+                        '<span style="margin-right: 10px;color: #e2d82c" >'+ 'MA10: ' + allData.MA10.data+'</span>' ,
+                        '<span style="margin-right: 10px;color: #3faaf9">'+ 'MA20: ' + allData.MA20.data+'</span>' ,
+                        '<span style="margin-right: 10px;color: #cf02d6">'+ 'MA30: ' + allData.MA30.data+'</span>' ,
+                        '<span style="margin-right: 10px";>'+ '交易量: ' + allData.Volumn.data+'</span>'
+                    ].join('');
+                }
+
+            },
+            axisPointer: {
+                link: {xAxisIndex: 'all'},
+                label: {
+                    backgroundColor: '#0a0a0a',
+                    borderColor:'#ffffff',
+                    borderWidth:1
+                }
+            },
+            grid: [
+                {
+                    top:'8%',
+                    left: '3%',
+                    right: '8%',
+                    height: '65%'
+                },
+                {
+                    left: '3%',
+                    right: '8%',
+                    bottom: '1%',
+                    height: '15%'
+                }
+            ],
+            xAxis: [
+                {
+                    type: 'category',
+                    data: data.categoryData,
+                    scale: true,
+                    boundaryGap : false,
+                    axisLine: {
+                        onZero: false,
+                        lineStyle:{
+                            color:'#cccccc'
+                        }
+                    },
+                    splitLine: {show: false},
+                    splitNumber: 20,
+                    min: 'dataMin',
+                    max: 'dataMax',
+                    axisPointer: {
+                        z: 100
+                    }
+                },
+                {
+                    type: 'category',
+                    gridIndex: 1,
+                    data: data.categoryData,
+                    scale: true,
+                    boundaryGap : false,
+                    axisLine: {onZero: false},
+                    axisTick: {show: false},
+                    splitLine: {show: false},
+                    axisLabel: {show: false},
+                    splitNumber: 20,
+                    axisLine: {
+                        onZero: false,
+                        lineStyle:{
+                            color:'#cccccc'
+                        }
+                    },
+
+                }
+            ],
+            yAxis: [
+                {
+                    position:'right',
+                    scale: true,
+                    splitArea: {
+                        show: false
+                    },
+                    splitLine: {
+                        show: true,
+                        lineStyle:{
+                            type:'dotted',
+                            color: ['#333333', '#333333']
+                        }
+                    },
+                    axisLine: {
+                        onZero: false,
+                        lineStyle:{
+                            color:'#cccccc'
+                        }
+                    },
+                },
+                {
+                    position:'right',
+                    scale: true,
+                    gridIndex: 1,
+                    splitNumber: 2,
+                    axisLabel: {show: true},
+                    axisLine: {show: true},
+                    axisTick: {show: true},
+                    splitLine: {show: true},
+                    axisLine: {
+                        onZero: false,
+                        lineStyle:{
+                            color:'#cccccc'
+                        }
+                    },
+                    splitLine: {
+                        show: true,
+                        lineStyle:{
+                            type:'dotted',
+                            color: ['#333333', '#333333']
+                        }
+                    }
+                }
+            ],
+            dataZoom: [
+                {
+                    type: 'inside',
+                    xAxisIndex: [0, 1],
+                    start: 98,
+                    end: 100
+                },
+                {
+                    show: false,
+                    xAxisIndex: [0, 1],
+                    type: 'slider',
+                    top: '85%',
+                    start: 98,
+                    end: 100
+                }
+            ],
+            series: [
+                {
+                    name: 'candlestick',
+                    type: 'candlestick',
+                    data: data.values,
+                    itemStyle: {
+                        normal: {
+                            color: '#06B800',
+                            color0: '#fa0000',
+                            borderColor: null,
+                            borderColor0: null
+                        }
+                    },
+                    markPoint: {
+                        symbol:'image://images/arrow.png',
+                        symbolSize:[40,10],
+                        symbolOffset:[-8,0],
+                        label: {
+                            normal: {
+                                formatter: function(param) {
+                                    return param != null ? Math.round(param.value) : '';
+                                },
+                                fontSize:'10',
+                                position:[-25,0],
+                                color:'#ccc'
+                            }
+                        },
+                        data: [ {
+                            name: 'highest value',
+                            type: 'max',
+                            valueDim: 'highest'
+                        }, {
+                            name: 'lowest value',
+                            type: 'min',
+                            valueDim: 'lowest'
+                        }],
+
+                    },
+
+                },
+                {
+                    symbol:'none',
+                    name: 'MA5',
+                    type: 'line',
+                    data: data.MA5,
+                    smooth: true,
+                    lineStyle: {
+                        normal: {color:'#ffffff',width:1}
+                    }
+                },
+                {
+                    symbol:'none',
+                    name: 'MA10',
+                    type: 'line',
+                    data: data.MA10,
+                    smooth: true,
+                    lineStyle: {
+                        normal: {color:'#e2d82c',width:1}
+                    }
+                },
+                {
+                    symbol:'none',
+                    name: 'MA20',
+                    type: 'line',
+                    data: data.MA20,
+                    smooth: true,
+                    lineStyle: {
+                        normal: {color:'#3faaf9',width:1}
+                    }
+                },
+                {
+                    symbol:'none',
+                    name: 'MA30',
+                    type: 'line',
+                    data: data.MA30,
+                    smooth: true,
+                    lineStyle: {
+                        normal: {color:'#cf02d6',width:1}
+                    }
+                },
+                {
+                    name: 'Volumn',
+                    type: 'bar',
+                    xAxisIndex: 1,
+                    yAxisIndex: 1,
+                    data: data.volumns,
+                    itemStyle: {
+                        normal: {
+                            color: function(params) {
+                                var colorList;
+                                if (data.values[params.dataIndex][1]>data.values[params.dataIndex][0]) {
+                                    colorList = '#ff0000';
+                                } else {
+                                    colorList = '#14b143';
+                                }
+                                return colorList;
+                            }
+                        }
+                    }
+
+                }
+            ]
+        }, true);
+    });
+
+</script>
+
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/common.js"></script>
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

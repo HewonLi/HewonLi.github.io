@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>威特</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="topbar">
+<div class="container">
+    <div class="topbar_content">
+        <div class="topbar_left">
+            <div class="topbar_detail">
+                <span class="fs-12"> 市场概况</span><span class="iconfont">&#xe600;</span>
+            </div>
+            <div class="topbar_data">
+                <span class="color-999">BTC/USD:</span>
+                <i class="color-red">$</i>
+                <span class="color-red">4145.00</span>
+                <i class="iconfont color-red fs-12" >&#xe62a;</i>
+            </div>
+            <div class="topbar_data">
+                <span class="color-999">BTC/USD:</span>
+                <i class="color-red">$</i>
+                <span class="color-red">4145.00</span>
+                <i class="iconfont color-red fs-12" >&#xe62a;</i>
+            </div>
+            <div class="topbar_data">
+                <span class="color-999">BTC/USD:</span>
+                <i class="color-red">$</i>
+                <span class="color-red">4145.00</span>
+                <i class="iconfont color-red fs-12" >&#xe62a;</i>
+            </div>
+            <div class="topbar_data">
+                <span class="color-999">BTC/USD:</span>
+                <i class="color-red">$</i>
+                <span class="color-red">4145.00</span>
+                <i class="iconfont color-red fs-12" >&#xe62a;</i>
+            </div>
+            <div class="topbar_data">
+                <span class="color-999">BTC/USD:</span>
+                <i class="color-red">$</i>
+                <span class="color-red">4145.00</span>
+                <i class="iconfont color-red fs-12" >&#xe62a;</i>
+            </div>
+        </div>
+        <div class="topbar_right">
+            <div class="topbar_nav">
+                <ul>
+                    <li class="language">
+                        <a href="javascript:;"><span class="language_icon"></span><i class="iconfont" >&#xe600;</i></a>
+                        <ul class="changeLanguage">
+                            <li><a href="javascript:;" ><span class="chinese_icon"></span></a></li>
+                            <li><a href="javascript:;"><span class="usa_icon"></span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="topbar_more">
+                <a href="javascript:;">
+                    <span>更多</span>
+                    <i class="iconfont">&#xe600;</i>
+                </a>
+                <ul>
+                    <li><a href="#">新手指导</a></li>
+                    <li><a href="#">资金安全</a></li>
+                    <li><a href="#">公告中心</a></li>
+                    <li><a href="#">费率标准</a></li>
+                </ul>
+                <div class="square"></div>
+            </div>
+            <div class="topbar_login" style="display: block;">
+                <a href="login.html">登录</a>
+                <a href="register.html" class="topbar_active">注册</a>
+            </div>
+            <div class="topbar_logined" style="display: none;">
+            	<a href="javascript:;" class="nickname">15988880436</a>
+            	<a href="javascript:;"class="loginout">退出</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<div class="header">
+    <div class="container ">
+        <div class="header_content">
+            <div class="header_left" >
+                <div class="header_logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="headerSelectCoin">
+                    <span>美元</span>
+                    <i class="iconfont">&#xe600;</i>
+                    <ul>
+                      <li>美元</li>
+                      <li>人民币</li>
+                      <li>币值交易</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_right">
+                <ul>
+                    <li><a href="index.html" class="header_active">首页</a></li>
+                    <li><a href="trade.html">交易中心</a></li>
+                    <li><a href="accountbalance.html">委托管理</a></li>
+                    <li><a href="user.html">个人中心</a></li>
+                    <li><a href="information.html">资讯</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner clear">
+    <div class="banner_content " style="background-color: #000;">
+        <div class="userLoginBlock">
+            <div class="userLogin" style="display: block;">
+                <form action="#">
+                    <span>登录Vetor</span>
+                    <ul>
+                        <li>
+                            <div class="loginInputBox" id="userNum">
+                                <span class="iconfont">&#xe602;</span>
+                                <input class="userName" type="text" placeholder="请输入邮箱/手机" value="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="loginInputBox" id="userPassword">
+                                <span class="iconfont">&#xe614;</span>
+                                <input class="passWord" type="password" placeholder="请输入密码" value="" >
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <button class="login_btn">登录</button>
+                        </li>
+                        <li class="login_bottom">
+                            <a href="register.html">免费注册</a>
+                            <a href="password_reset/ensure_accout.html">忘记密码</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <div class="userLogined"style="display: none;">
+                <p class="loginTitle">欢迎回来，<span>15988880436</span></p>
+                <ul>
+                    <li>
+                        <span>净资产：</span>
+                        <em><b>$</b><strong>0.000</strong></em>
+                    </li>
+                    <li>
+                        <span>总资产：</span>
+                        <em><b>$</b><strong>0.000</strong></em>
+                    </li>
+                    <li>
+                        <span>当前可用：</span>
+                        <em><b>$</b><strong>0.000</strong></em>
+                    </li>
+                </ul>
+                <a href="">进入交易中心</a>
+            </div>
+
+        </div>
+        <a href="#" class="banner_bg" style="background-image: url(./images/banner.jpg);"></a>
+    </div>
+</div>
+<div class="detailData container">
+    <ul>
+        <li>
+        <p>最新成交价</p>
+        <div>
+            <span class="detailData_num color-red">58.00￥</span>
+        </div>
+    </li>
+    <li>
+        <p>交易量</p>
+        <div>
+            <span class="detailData_num color-red">20000.00</span>
+        </div>
+    </li>
+        <li>
+            <p>买一价</p>
+            <div>
+                <span class="detailData_num color-green">55.00￥</span>
+            </div>
+        </li>
+        <li>
+            <p>卖一价</p>
+            <div>
+                <span class="detailData_num color-green" >52.00.00￥</span>
+            </div>
+        </li>
+        <li>
+            <p>最高价</p>
+            <div>
+                <span class="detailData_num color-blue">60.00￥</span>
+            </div>
+        </li>
+        <li>
+            <p>最低价</p>
+            <div>
+                <span class="detailData_num color-blue">50.00￥</span>
+            </div>
+        </li>
+
+    </ul>
+</div>
+<div class="productImg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 productImg_center ">
+                <img src="images/home_pic2_2.png" alt=""  class="imgpic2">
+                <img src="images/home_pic2_1.png" alt="" class="imgpic1">
+                <img src="images/home_pic2_3.png" alt="" class="imgpic3">
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <div class="appDetail">
+                <p class="appDetail_title">CHBTC手机客户端</p>
+                <p class="appDetail_info">
+                    <span>浏览行情</span>
+                    <span>酣畅交易</span>
+                    <span>指尖掌握</span>
+                </p>
+                    <div class="appDowmBox">
+                        <div class="appDown">
+                            <a href="javascript:;"><span class="iconfont" style="font-size: 24px">&#xe6ec;</span><span class="line"></span> <span>IPhone下载</span></a>
+                            <a href="javascript:;" style="background: #000;margin-top: 20px"><span class="iconfont" style="font-size: 24px">&#xe615;</span><span class="line"></span> <span>Android下载</span></a>
+                        </div>
+                       <div class="qr-img">
+                           <img src="images/mobile-QR-Code.png" alt="二维码消失了">
+                           <a href="#"><<安装指南>></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="introduce">
+    <div class="container">
+        <p>金融级别数字资产交易网</p>
+        <span>安全的系统运营、多重技术安全防护、7×24小时服务支持</span>
+        <div class="row" style="margin-top: 40px">
+            <div class="col-md-3">
+                <i class="icon-1" style="background-image: url(images/honor1.png);">
+                    <!--<em></em>-->
+                </i>
+                <h4></h4>
+                <h4>信誉口碑业界前茅</h4>
+                    
+            </div>
+            <div class="col-md-3">
+                <i class="icon-1" style="background-image: url(images/honor2.png);">
+                    <!--<em style="background-image: url(images/honor_img_b_n1.png);"></em>-->
+                </i>
+                <h4>更专注的系统服务</h4>
+                <h4>更安全的多重防护</h4>
+            </div>
+            <div class="col-md-3">
+                <i class="icon-1" style="background-image: url(images/honor3.png);">
+                    <!--<em style="background-image: url(images/honor_img_c_n1.png);"></em>-->
+                </i>
+                <h4>高速的系统运转</h4>
+                <h4>用心的完美追求</h4>
+            </div>
+            <div class="col-md-3" >
+                <i class="icon-1" style="background-image: url(images/honor4.png);">
+                    <!--<em style="background-image: url(images/honor_img_d_n1.png);"></em>-->
+                </i>
+                <h4>7×24小时客服</h4>
+                <h4>更贴心的安全管家</h4>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="notice">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="notice_title">
+                    <span class="fs-24">官方公告</span>
+                    <span>查看更多</span>
+                </div>
+                <div class="notice_content" style=" overflow:hidden;">
+                    <ul class="GM_notice">
+                        <li><a href="#" title="关于开放BCC提币业务的公告" target="_self">关于开放BCC提币业务的公告</a>
+                            <div class="snote">
+                                经过技术团队测试后，中国比特币将于9月20日20:00开放BCC提现业务。
+                            </div>
+                        </li>
+
+                        <li><a href="#" title="中国比特币关于停止人民币交易业务的公告" target="_self">中国比特币关于停止人民币交易业务的公告</a>
+                            <div class="snote">
+                                中国比特币从2017年9月15日24:00点起，暂停新用户注册、人民币充值业务，撤销充值通道
+                            </div>
+                        </li>
+
+                        <li><a href="#" title="关于调整交易手续费的公告" target="_self">关于调整交易手续费的公告</a>
+                            <div class="snote">
+                                CHBTC将于9月11日12:00起取消对Maker交易的费率优惠措施，同时调整部分币种的交易手续费
+                            </div>
+                        </li>
+
+                        <li><a href="#" title="关于Hcash主链代码升级及钱包更新公告" target="_self">关于Hcash主链代码升级及钱包更新公告</a>
+                            <div class="snote">
+                                Hcash将在当前主链的区块高度106000（9月11日凌晨1点左右）实施硬分叉升级，升级之后将实现POW+POS混合挖矿模式。
+                            </div>
+                        </li>
+
+                        <li><a href="#" title="关于暂停EOS交易的公告" target="_self">关于暂停EOS交易的公告</a>
+                            <div class="snote">
+                                经综合考虑决定，CHBTC决定于2017年9月8日23:30分暂停EOS交易服务。
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="notice_title">
+                    <span class="fs-24">行内动态</span>
+                    <span>查看更多</span>
+                </div>
+                <div class="notice_content" style=" overflow:hidden;">
+                    <ul class="Vocation_notice">
+                        <li><a href="#" title="关于开放BCC提币业务的公告" target="_self">关于开放BCC提币业务的公告</a>
+                            <div class="snote">
+                                经过技术团队测试后，中国比特币将于9月20日20:00开放BCC提现业务。
+                            </div>
+                        </li>
+
+                        <li><a href="#" title="中国比特币关于停止人民币交易业务的公告" target="_self">中国比特币关于停止人民币交易业务的公告</a>
+                            <div class="snote">
+                                中国比特币从2017年9月15日24:00点起，暂停新用户注册、人民币充值业务，撤销充值通道
+                            </div>
+                        </li>
+
+                        <li><a href="#" title="关于调整交易手续费的公告" target="_self">关于调整交易手续费的公告</a>
+                            <div class="snote">
+                                CHBTC将于9月11日12:00起取消对Maker交易的费率优惠措施，同时调整部分币种的交易手续费
+                            </div>
+                        </li>
+
+                        <li><a href="#" title="关于Hcash主链代码升级及钱包更新公告" target="_self">关于Hcash主链代码升级及钱包更新公告</a>
+                            <div class="snote">
+                                Hcash将在当前主链的区块高度106000（9月11日凌晨1点左右）实施硬分叉升级，升级之后将实现POW+POS混合挖矿模式。
+                            </div>
+                        </li>
+                        <li><a href="#" title="关于暂停EOS交易的公告" target="_self">关于暂停EOS交易的公告</a>
+                            <div class="snote">
+                                经综合考虑决定，CHBTC决定于2017年9月8日23:30分暂停EOS交易服务。
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer">
+    <div class="container">
+        <p>****科技有限公司</p>
+        <p>Copyright &copy;1998-2017WEITE All Right Reserve</p>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.js"></script>
+<script>
+
+
+
+
+</script>
+<script src="js/common.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

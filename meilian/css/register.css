@@ -1,0 +1,73 @@
+@charset "utf-8";
+.register {
+  background: url("../images/login.jpg") center repeat scroll transparent;
+  height: 650px;
+  overflow: hidden;
+}
+.register .registerHeader {
+  padding: 10px 0;
+}
+.register .registerHeader a {
+  display: block;
+  width: 180px;
+  height: 50px;
+}
+.register .registerBox .phoneRegister ul {
+  background: #000000;
+  filter: alpha(opacity=42);
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.12);
+  float: right;
+  width: 300px;
+  padding: 10px 25px 20px;
+}
+.register .registerBox .phoneRegister ul li {
+  position: relative;
+  /*margin: 10px 0;*/
+}
+.register .registerBox .phoneRegister ul li:nth-of-type(1){
+	margin-bottom: 10px;
+}
+.register .registerBox .phoneRegister ul li:nth-of-type(2){
+	margin-bottom: 20px;
+}
+.register .registerBox .phoneRegister ul li:nth-last-of-type(1){
+	margin-top: 20px;
+}
+.register .registerBox .phoneRegister ul .registerTitle span {
+  font-size: 16px;
+  color: #fff;
+}
+.register .registerBox .phoneRegister ul li .form-group .input-icon{
+	position: relative;
+}
+.register .registerBox .phoneRegister ul li .form-group .input-icon i{
+	position: absolute;
+	color: #ccc;
+	top: 11px;
+	left: 5px;
+}
+.register .registerBox .phoneRegister ul li .form-group #v_container{
+	display: inline-block; 
+	width: 80px;
+	height: 33px;
+	transform: translateY(12px);
+	-webkit-transform: translateY(12px);
+}
+.register .registerBox .phoneRegister ul li .form-group #my_button{
+	display: inline-block;
+	margin-top: -2px;
+}
+
+
+.register .registerBox .phoneRegister ul li > button {
+  width: 100%;
+  background: #3c90dc;
+  border: 1px solid #3c90dc;
+  color: #fff;
+  padding: 8px 0;
+  border-radius:2px 
+}
+
+.register .registerBox .phoneRegister ul li > a {
+  color: #fff;
+}

@@ -1,0 +1,243 @@
+.tradeBox {
+  padding-top: 10px;
+  background: #eff3f8;
+}
+.tradeBox .tradeCentent {
+  min-height: 735px;
+}
+.tradeBox .tradeCentent .tradeCententOperate {
+  margin-bottom: 10px;
+  display: flex;
+  box-sizing: border-box;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox {
+  width: 50%;
+  background: #fff;
+  padding: 15px 5px;
+  display: flex;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate {
+  padding: 0 10px;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeTitle {
+  padding: 5px 0 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeTitle .tradeTitleLeft > span {
+  color: #e11f17;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeTitle .tradeTitleRight a {
+  margin-right: 15px;
+  color: #e11f17;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeTitle .tradeTitleRight a span {
+  margin-right: 3px;
+  vertical-align: middle;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeData_Box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeData_Box ul {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeData_Box ul li {
+  padding: 5px 0;
+  width: 50%;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeData_Box .tradeDataCenter > p {
+  color: #e11f17;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeData_Box .tradeDataCenter > p > span {
+  color: #e11f17;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeData_Box .tradeDataCenter > div {
+  display: flex;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeData_Box .tradeDataCenter > div > p {
+  margin-right: 10px;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .wayInputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .wayInputBox .WayInput {
+  width: 48%;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 4px;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .wayInputBox .WayInput span {
+  font-size: 12px;
+  padding: 0 10px;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .wayInputBox .WayInput input {
+  border: none;
+  flex: 1;
+  height: 20px;
+  font-size: 12px;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradingVolume {
+  font-size: 12px;
+  padding: 10px 20px 20px;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeBtn {
+  display: flex;
+  justify-content: space-around;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeBtn button {
+  width: 49%;
+  padding: 10px 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeBtn .tradeBuyBtn {
+  border: 1px solid #e11f17;
+  background: #e11f17;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .Operate .WayContent .tradeBtn .tradeSellBtn {
+  border: 1px solid #34c28d;
+  background: #34c28d;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateBox .OperateSell {
+  width: 50%;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData {
+  width: 50%;
+  background: #fff;
+  padding: 15px;
+  margin-right: 10px;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataTab {
+  margin-bottom: 20px;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataTab > ul {
+  display: flex;
+  justify-content: center;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataTab > ul > li {
+  width: 50% ;
+  text-align: center;
+  background: #faf8f9;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataTab > ul .OperateDataTabActive {
+  background: #34c28d;
+  color: #fff;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newSell .select_Coin {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newSell .select_Coin > span {
+  display: block;
+  background: #ff0000;
+  color: #fff;
+  width: 35px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newSell .select_Coin > span:hover {
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+  background: #d50e0e;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newSell .newSellTable {
+  height: 340px;
+  overflow-y: scroll;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newSell .newSellTable > table {
+  margin-bottom: 0;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newSell .newSellTable > table > thead > tr {
+  background: #fbfcfc;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newSell .newSellTable > table > thead > tr > th {
+  text-align: center;
+  border-bottom: 0;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newSell .newSellTable > table > tbody > tr > th {
+  color: #e11f17;
+  text-align: center;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newSell .newSellTable > table > tbody > tr > td {
+  text-align: center;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newSell .newSellTable > table > tbody > tr .progressTD {
+  width: 100px;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newTradeRecord {
+  height: 340px;
+  overflow-y: scroll;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newTradeRecord > table > thead > tr > th {
+  text-align: center;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newTradeRecord > table > tbody > tr > th {
+  text-align: center;
+  color: #ff0000;
+}
+.tradeBox .tradeCentent .tradeCententOperate .OperateData .OperateDataContent .newTradeRecord > table > tbody > tr > td {
+  text-align: center;
+}
+.tradeBox .tradeCentent .tradeCententEntrust {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+.tradeBox .tradeCentent .tradeCententEntrust .EntrustWay {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.tradeBox .tradeCentent .tradeCententEntrust .EntrustWay ul {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+.tradeBox .tradeCentent .tradeCententEntrust .EntrustWay ul li {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 20px 15px;
+  color: #afbac8;
+  cursor: pointer;
+}
+.tradeBox .tradeCentent .tradeCententEntrust .EntrustWay ul .EntrustWayActive {
+  border-bottom: 2px solid #ff0000;
+  color: #000;
+}
+.buyAllBtn {
+  border: 1px solid #3faaf9;
+  background: #fff;
+  color: #1296db;
+  border-radius: 4px;
+  padding: 3px 5px;
+  margin: 4px 15px;
+}
+.buyAllBtn:hover {
+  background: #3faaf9;
+  color: #fff;
+}
+.buyAllBtn:focus {
+  border-color: transparent;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.wrap1{
+		position: relative;
+	}
+	.wrap1 .cover{
+		position: absolute;
+		top: 0;
+		left: 0;
+		/*background-color: rgba(0,0,0,.9);
+		opacity: 0.5;*/
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0.42);
+	}
+	.loadEffect{
+	    width: 100px;
+	    height: 100px;
+	    position: relative;
+	    margin: 0 auto;
+	    margin-top:20%;
+	    transform: scale(1)
+	}
+	.loadEffect .ld-span{
+	    display: inline-block;
+	    width: 20px;
+	    height: 20px;
+	    border-radius: 50%;
+	    background-color:deepskyblue ;
+	    position: absolute;
+	    -webkit-animation: load 1.04s ease infinite;
+	}
+	@-webkit-keyframes load{
+	    0%{
+	    -webkit-transform: scale(1.2);
+	    opacity: 1;
+	    }
+	    100%{
+	    -webkit-transform: scale(.3);
+	    opacity: 0.5;
+	    }
+	}
+	.loadEffect .ld-span:nth-child(1){
+	    left: 0;
+	    top: 50%;
+	    margin-top:-10px;
+	    -webkit-animation-delay:0.13s;
+	}
+	.loadEffect .ld-span:nth-child(2){
+	    left: 14px;
+	    top: 14px;
+	    -webkit-animation-delay:0.26s;
+	}
+	.loadEffect .ld-span:nth-child(3){
+	    left: 50%;
+	    top: 0;
+	    margin-left: -10px;
+	    -webkit-animation-delay:0.39s;
+	}
+	.loadEffect .ld-span:nth-child(4){
+	    top: 14px;
+	    right:14px;
+	    -webkit-animation-delay:0.52s;
+	}
+	.loadEffect .ld-span:nth-child(5){
+	    right: 0;
+	    top: 50%;
+	    margin-top:-10px;
+	    -webkit-animation-delay:0.65s;
+	}
+	.loadEffect .ld-span:nth-child(6){
+	    right: 14px;
+	    bottom:14px;
+	    -webkit-animation-delay:0.78s;
+	}
+	.loadEffect .ld-span:nth-child(7){
+	    bottom: 0;
+	    left: 50%;
+	    margin-left: -10px;
+	    -webkit-animation-delay:0.91s;
+	}
+	.loadEffect .ld-span:nth-child(8){
+	    bottom: 14px;
+	    left: 14px;
+	    -webkit-animation-delay:1.04s;
+	}
+	.btn1{
+		padding: 10px 16px;
+	    font-size: 18px;
+	    line-height: 1.3333333;
+	    border-radius: 6px;
+	    color: #fff;
+	    background-color: #337ab7;
+	    border-color: #2e6da4;
+	    display: inline-block;
+	    font-weight: normal;
+	    text-align: center;
+	    white-space: nowrap;
+	    vertical-align: middle;
+	    touch-action: manipulation;
+	    cursor: pointer;
+	    user-select: none;
+	    background-image: none;
+	    border: 1px solid transparent;
+	    font-family: inherit;
+	}
+	
+	
+	
+	
+	.wrap2 .btn2{
+		
+		padding: 10px 16px;
+	    font-size: 18px;
+	    line-height: 1.3333333;
+	    border-radius: 6px;
+	    color: #fff;
+	    background-color: #337ab7;
+	    border-color: #2e6da4;
+	    display: inline-block;
+	    font-weight: normal;
+	    text-align: center;
+	    white-space: nowrap;
+	    vertical-align: middle;
+	    touch-action: manipulation;
+	    cursor: pointer;
+	    user-select: none;
+	    background-image: none;
+	    border: 1px solid transparent;
+	    font-family: inherit;
+	}
+	.wrap2 .boom{
+		position: relative;
+		width: 300px;
+	    height: 100px;
+	    position: relative;
+	    margin: 0 auto;
+	    margin-top:3%;
+	    transform: scale(1);
+	    background-color: aquamarine;
+	    border: 1px solid #008000;
+	}
+	.wrap2 .boom a{
+		text-decoration: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	</style>
+	<body>
+		
+		<div class="wrap1">
+			<div class="cover" style="display: none;"></div>
+			<button class="btn1">提交</button>
+			<div class="loadEffect"style="display: none;">
+			    <span class="ld-span"></span>
+			    <span class="ld-span"></span>
+			    <span class="ld-span"></span>
+			    <span class="ld-span"></span>
+			    <span class="ld-span"></span>
+			    <span class="ld-span"></span>
+			    <span class="ld-span"></span>
+			    <span class="ld-span"></span>
+			</div>
+		</div>
+		
+		<div class="wrap2">
+			<button class="btn2">确定</button>
+			<div class="boom"style="display: block;">
+			错误提示！！！
+			<a href="javascript:;">X</a>
+			</div>
+		</div>
+		
+		
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				var a = $(window).width()
+				var b = $(window).height()
+				console.log(a)
+				console.log(b)
+				console.log(Math.random())
+				$(".cover").css("width",a)
+				$(".cover").css("height",b)
+				$(".btn1").click(function(){
+					$(".cover").fadeIn()
+					$(".loadEffect").slideDown()
+					setTimeout(function(){
+						$(".cover").fadeOut()
+						$(".loadEffect").slideUp()
+					},3000)
+				})
+				
+				
+				
+				
+				
+			})
+			
+			
+			
+		
+		</script>
+	</body>
+</html>

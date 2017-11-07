@@ -1,0 +1,162 @@
+.accountBalanceRight .balanceTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+.accountBalanceRight .balanceTitle > p span {
+  font-size: 14px;
+}
+.accountBalanceRight .balanceTitle a {
+  color: #3c90dc;
+}
+.accountBalanceRight .balanceTitle a span {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.accountBalanceRight .capitalBalance > table {
+  border: 1px solid #eee;
+}
+.accountBalanceRight .capitalBalance > table > thead {
+  background: #f7f7f7;
+}
+.accountBalanceRight .capitalBalance > table > thead > tr > th {
+  text-align: center;
+  border-bottom: none;
+}
+.accountBalanceRight .capitalBalance > table > tbody > tr > th {
+  text-align: center;
+}
+.accountBalanceRight .capitalBalance > table > tbody > tr > td {
+  text-align: center;
+}
+.accountBalanceRight .capitalBalance > table > tbody > tr > td a {
+  box-sizing: border-box;
+  color: #3c90dc;
+  margin-left: 5px;
+}
+.accountBalanceRight .rechargeNav {
+  border: 1px solid #eee;
+  margin: 8px 0;
+  display: flex;
+}
+.accountBalanceRight .rechargeNav li {
+  flex: 1;
+  text-align: center;
+  background: #f7f7f7;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.accountBalanceRight .rechargeNav li:hover{
+  background: #DCF0FF;
+	color: deepskyblue;
+}
+.accountBalanceRight .rechargeNav .rechargeActive {
+  background: #DCF0FF;
+	color: deepskyblue;
+}
+.accountBalanceRight .rechargeContent .rechargeWay {
+  border: 1px solid #eee;
+}
+.accountBalanceRight .rechargeContent .rechargeWay > p {
+  width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.accountBalanceRight .moneyDetail .moneyDetailTitle {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.accountBalanceRight .moneyDetail .moneyDetailTitle > span {
+  color: #3c90dc;
+  font-size: 14px;
+}
+.accountBalanceRight .moneyDetail .moneyDetailTitle > a {
+  color: #3c90dc;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent {
+  border: 1px solid #eee;
+  padding: 15px;
+  padding-bottom: 0;
+  border-radius: 5px;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailTop {
+  display: flex;
+  align-items: center;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailTop .coinType {
+  display: flex;
+  align-items: center;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailTop .coinType > div {
+  margin-right: 5px;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailTop .coinType > div select {
+  width: 150px;
+  height: 22px;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailTop .coinTypeFilterTime a {
+  padding: 5px 10px;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailTop .coinTypeFilterTime .coinTypeFilterTimeActive {
+  background: #3c90dc;
+  color: #fff;
+  border-radius: 5px;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailBottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailBottom > table {
+  border: 1px solid #eee;
+  margin: 0;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailBottom > table > thead {
+  background: #f7f7f7;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailBottom > table > thead > tr > th {
+  text-align: center;
+  border-bottom: none;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailBottom > table > tbody > tr > th {
+  text-align: center;
+}
+.accountBalanceRight .moneyDetail .moneyDetailContent .moneyDetailBottom > table > tbody > tr > td {
+  text-align: center;
+}
+.accountBalanceRight .recommendContent .recommendActivity,
+.accountBalanceRight .recommendContent .myRecommend {
+  margin: 8px 0;
+}
+.accountBalanceRight .recommendContent .recommendActivity > p,
+.accountBalanceRight .recommendContent .myRecommend > p {
+  color: #3c90dc;
+  font-size: 14px;
+}
+.accountBalanceRight .recommendContent .RecommendCount > table {
+  border: 1px solid #eee;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.accountBalanceRight .recommendContent .RecommendCount > table caption {
+  font-size: 14px;
+  color: #3c90dc;
+}
+.accountBalanceRight .recommendContent .RecommendCount > table > thead {
+  background: #3c90dc;
+}
+.accountBalanceRight .recommendContent .RecommendCount > table > thead > tr > th {
+  text-align: center;
+  border-bottom: none;
+  color: #fff;
+}
+.accountBalanceRight .recommendContent .RecommendCount > table > tbody > tr > th {
+  text-align: center;
+}
+.accountBalanceRight .recommendContent .RecommendCount > table > tbody > tr > td {
+  text-align: center;
+}

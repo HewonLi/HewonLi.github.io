@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>威特</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="topbar">
+    <div class="container">
+        <div class="topbar_content">
+            <div class="topbar_left">
+                <div class="topbar_detail">
+                    <span class="fs-12"> 市场概况</span><span class="iconfont">&#xe600;</span>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+            </div>
+            <div class="topbar_right">
+                <div class="topbar_nav">
+                    <ul>
+                        <li class="language">
+                            <a href="javascript:;"><span class="language_icon"></span><i class="iconfont" >&#xe600;</i></a>
+                            <ul class="changeLanguage">
+                                <li><a href="javascript:;" ><span class="chinese_icon"></span></a></li>
+                                <li><a href="javascript:;"><span class="usa_icon"></span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topbar_more">
+                    <a href="javascript:;">
+                        <span>更多</span>
+                        <i class="iconfont">&#xe600;</i>
+                    </a>
+                    <ul>
+                        <li><a href="#">新手指导</a></li>
+                        <li><a href="#">资金安全</a></li>
+                        <li><a href="#">公告中心</a></li>
+                        <li><a href="#">费率标准</a></li>
+                    </ul>
+                    <div class="square"></div>
+                </div>
+                <div class="topbar_login" style="display: block;">
+                    <a href="#">登录</a>
+                    <a href="register.html" class="topbar_active">注册</a>
+                </div>
+                <div class="topbar_logined" style="display: none;">
+                    <a href="#" class="nickname">15988880436</a>
+                    <a href="#"class="loginout">退出</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="login">
+    <div class="login-center">
+        <div class="container">
+            <div class="loginHeader">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="loginBox" >
+                <div class="phoneLogin" >
+                    <ul>
+                        <li class="loginTitle">
+                            <span>登录Vetor</span>
+                            <a href="javascript:;" id="qrLoadBtn">
+                                <img src="https://img.bafang.com/v_20170930002/okcoin/image/index/login/loginCode.png" alt="" >
+                            </a>
+                        </li>
+                        <li>
+                            <input id="uname" class="loginAdmin" type="text"  name="username" placeholder="请输入邮箱/手机号" value="">
+                            <span class="adminImg"></span>
+                        </li>
+                        <li>
+                            <input id="pwd" class="loginAdmin" type="password"  name="username" placeholder="请输入密码" value="">
+                            <span class="adminImg passordImg"></span>
+                            <p id="prompt">输入的账号或密码错误</p>
+                        </li>
+                        <li><!--这里return的作用是在登录不成功时页面不跳转-->
+                            <button onclick="return checkuser()">登录</button>
+                        </li>
+                        <li>
+                            <a href="register.html" style="float: left;">免费注册</a>
+                            <a href="password_reset/ensure_accout.html" style="float: right;">忘记密码</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="qrLogin">
+                    <div class="qrLoginTitle">
+                        <span>APP登录</span>
+                        <a href="javascript:;" id="phoneLoginBtn">
+                            <img src="images/loginPc.png" alt="">
+                        </a>
+                    </div>
+                    <div class="qrBox">
+                        <img src="images/qr.png" alt="">
+                        <p>请用App扫描二维码登录</p>
+                    </div>
+                    <div class="qrHelp">
+                        <a href="">使用帮助</a>
+                        <a href="">下载APP客户端</a>
+                    </div>
+                    <div id="invalidDiv" class="shadowDiv" >
+                        <p class="noteWord">二维码失效</p>
+                        <a class="refreshBtn">刷新</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="footer">
+    <div class="container">
+        <p>****科技有限公司</p>
+        <p>Copyright &copy;1998-2017WEITE All Right Reserve</p>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.js"></script>
+<script>
+    $(function(){
+        $('#qrLoadBtn').click(function(){
+            $('.phoneLogin').hide()
+            $('.qrLogin').show()
+
+        })
+        $('#phoneLoginBtn').click(function(){
+            $('.phoneLogin').show()
+            $('.qrLogin').hide()
+
+        })
+    })
+</script>
+<script type="text/javascript">
+//	       这里演示如果账号为lala密码为123则登录成功
+      function checkuser() {
+         if(vl('uname') == "lala" && vl('pwd') == "123") {
+//         return true;
+           console.log(1)
+           alert("登录成功")
+         }else {
+//          return false;
+            console.log(2)
+            elm('prompt').style.visibility = "visible"
+            setTimeout(function(){
+            	elm('prompt').style.visibility = "hidden"
+            },3000)
+         }
+      }
+	  function elm(id) {
+        return document.getElementById(id);
+      }
+      function vl(id) {
+        return document.getElementById(id).value;
+      }
+     </script>
+<script src="js/common.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

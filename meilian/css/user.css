@@ -1,0 +1,223 @@
+.securityContent .securityTop {
+  padding: 20px 20px 10px;
+  background: #f5f7fa;
+}
+.securityContent .securityTop p {
+  font-size: 16px;
+}
+.securityContent .securityTop p a {
+  font-size: 16px;
+  color: #3c90dc;
+}
+.securityContent .securityTop ul {
+  display: flex;
+  padding: 0 10px ;
+}
+.securityContent .securityTop ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px ;
+}
+.securityContent .securityTop ul li em {
+  background: #c2cad8;
+  font-size: 16px;
+  color: #eeeeee;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-style: normal;
+  margin-right: 10px;
+}
+.securityContent .securityTop ul li .securityActive {
+  background: #34c28d;
+}
+.securityContent .securityTop ul li i {
+  font-size: 24px;
+}
+.securityContent .securityMiddle {
+  margin-top: 10px;
+  border-top: 3px solid #3c90dc!important;
+  padding: 20px 20px 0;
+  border: 1px solid #eee;
+}
+.securityContent .securityMiddle .securityMiddleTitle {
+  display: flex;
+  align-items: flex-end;
+}
+.securityContent .securityMiddle .securityMiddleTitle h3 {
+  font-size: 18px;
+  color: #3c90dc;
+  margin-right: 10px;
+}
+.securityContent .securityMiddle .securityMiddleContent {
+  margin-top: 10px;
+}
+.securityContent .securityMiddle .securityMiddleContent .securityBlock {
+  border: 1px solid #00af77;
+  display: flex;
+  align-items: center;
+  background: #f1ffe2;
+  margin-bottom: 15px;
+  height: 60px;
+  padding: 0 20px;
+}
+.securityContent .securityMiddle .securityMiddleContent .securityBlock i {
+  width: 24px;
+  height: 24px;
+  background: url("../images/safe.png");
+  margin-right: 15px;
+}
+.securityContent .securityMiddle .securityMiddleContent .securityBlock .noComplete {
+  background-position: right top;
+}
+.securityContent .securityMiddle .securityMiddleContent .securityBlock > span {
+  font-size: 18px;
+  color: #47b53f ;
+}
+.securityContent .securityMiddle .securityMiddleContent .securityBlock .securityHandle {
+  margin-left: 50px;
+}
+.securityContent .securityMiddle .securityMiddleContent .securityBlock .securityHandle > p {
+  padding: 5px 0 ;
+}
+.securityContent .securityMiddle .securityMiddleContent .securityBlock .securityHandle > p a {
+  color: #3c90dc;
+  margin-right: 10px;
+}
+.securityContent .securityMiddle .securityMiddleContent .unSuccess {
+  border: 1px solid #fec6ad;
+  background: #ffedda;
+}
+.securityContent .securityMiddle .securityMiddleContent .unSuccess > span {
+  color: #e11f17;
+}
+.securityContent .securityMiddle .noticeBlock {
+  margin-bottom: 15px;
+  padding: 20px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #00af77;
+  background: #f1ffe2;
+}
+.securityContent .securityMiddle .noticeBlock .noticeBlockLeft {
+  display: flex;
+  align-items: center;
+}
+.securityContent .securityMiddle .noticeBlock .noticeBlockLeft i {
+  width: 24px;
+  height: 24px;
+  background: url("../images/safe.png");
+  margin-right: 5px;
+}
+.securityContent .securityMiddle .noticeBlock .noticeBlockLeft span {
+  font-size: 16px;
+  color: #00af77;
+}
+.securityContent .securityMiddle .noticeBlock .noticeBlockRight {
+  display: flex;
+  align-items: center;
+}
+.securityContent .securityMiddle .noticeBlock .noticeBlockRight span {
+  margin-right: 5px;
+}
+.securityContent .securityMiddle .noticeBlock .noticeBlockRight a {
+  width: 60px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: -2px;
+}
+.securityContent .securityBottom {
+  margin-top: 10px;
+  border: 1px solid #eee;
+}
+.securityContent .securityBottom .loadRecords ul {
+  display: flex;
+}
+.securityContent .securityBottom .loadRecords ul li {
+  font-size: 18px;
+  width: 250px;
+  text-align: center;
+  padding: 20px 0 10px;
+  background: #fbfcfc;
+  cursor: pointer;
+}
+.securityContent .securityBottom .loadRecords ul .loadRecordsActive {
+  border-bottom: 3px solid #3c90dc;
+  background: #fff;
+}
+.securityContent .securityBottom .loadRecords .loadRecordsContent,
+.securityContent .securityBottom .loadRecords .tenLoadRecordsContent {
+  padding: 20px 0 20px 40px;
+}
+.securityContent .securityBottom .loadRecords .loadRecordsContent p,
+.securityContent .securityBottom .loadRecords .tenLoadRecordsContent p {
+  padding: 10px 0;
+}
+.securityContent .validateContent {
+  margin-top: 10px;
+}
+.securityContent .validateContent > p {
+  padding: 10px 0;
+  color: #e11f17;
+  font-size: 14px;
+}
+.securityContent .validateContent > a {
+  font-size: 14px;
+  color: #3c90dc;
+  padding: 10px 0;
+  display: block;
+}
+.securityContent .validateContent .validateNotice h3 {
+  font-size: 20px;
+  color: #3c90dc;
+  margin-bottom: 10px;
+}
+.securityContent .validateContent .validateNotice span {
+  font-size: 14px;
+}
+.securityContent .validateContent .validateTitle > p:nth-of-type(1) {
+	float: left;
+  font-size: 16px;
+  color: #3c90dc;
+  margin: 20px 0;
+  font-weight:900 ;
+}
+.securityContent .validateContent .validateTitle > p:nth-of-type(2) {
+	float: right;
+  font-size: 16px;
+  margin: 20px 0;
+  font-weight:500;
+  border-bottom: 3px solid green;
+  padding-bottom: 5px;
+}
+.securityContent .validateContent #information{
+	
+}
+.securityContent .validateContent #information  label{
+	font-size: 15px;
+}
+.securityContent .validateContent #information  #submitbtn{
+	width: 300px;
+	background-color: #3598dd;
+}
+.securityContent .accountManage {
+  margin-top: 10px;
+}
+
+.securityContent .accountManage .sonAccount .sonAccountTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.securityContent .accountManage .sonAccount .sonAccountTitle a {
+  border: 1px solid #3c90dc;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.securityContent .accountManage .sonAccount .sonAccountTitle a span {
+  color: #3c90dc;
+  margin-right: 5px;
+}

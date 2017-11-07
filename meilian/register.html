@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>威特</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/register.css">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="bg"style="min-height:920px ;">
+<div class="topbar">
+    <div class="container">
+        <div class="topbar_content">
+            <div class="topbar_left">
+                <div class="topbar_detail">
+                    <span class="fs-12"> 市场概况</span><span class="iconfont">&#xe600;</span>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+                <div class="topbar_data">
+                    <span class="color-999">BTC/USD:</span>
+                    <i class="color-red">$</i>
+                    <span class="color-red">4145.00</span>
+                    <i class="iconfont color-red fs-12" >&#xe62a;</i>
+                </div>
+            </div>
+            <div class="topbar_right">
+                <div class="topbar_nav">
+                    <ul>
+                        <li class="language">
+                            <a href="javascript:;"><span class="language_icon"></span><i class="iconfont" >&#xe600;</i></a>
+                            <ul class="changeLanguage">
+                                <li><a href="javascript:;" ><span class="chinese_icon"></span></a></li>
+                                <li><a href="javascript:;"><span class="usa_icon"></span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topbar_more">
+                    <a href="javascript:;">
+                        <span>更多</span>
+                        <i class="iconfont">&#xe600;</i>
+                    </a>
+                    <ul>
+                        <li><a href="#">新手指导</a></li>
+                        <li><a href="#">资金安全</a></li>
+                        <li><a href="#">公告中心</a></li>
+                        <li><a href="#">费率标准</a></li>
+                    </ul>
+                    <div class="square"></div>
+                </div>
+                <div class="topbar_login" style="display: block;">
+                    <a href="login.html">登录</a>
+                    <a href="register.html" class="topbar_active">注册</a>
+                </div>
+                <div class="topbar_logined" style="display: none;">
+                    <a href="#" class="nickname">15988880436</a>
+                    <a href="#"class="loginout">退出</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="register">
+    <div class="container">
+        <div class="registerHeader">
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="registerBox" >
+            <div class="phoneRegister" >
+            	<form class="register-form" action="http://www.meiunite.com/m/center/signup" method="post" style="display:block;" novalidate="novalidate">
+	                <ul>
+	                    <li class="registerTitle">
+	                        <span>注册Vetor</span>
+	                    </li>
+	                    <!--国家-->
+	                    <li>
+	                    	<div class="form-group">
+								<select name="bean.countryId" id="country_list" class="select2 form-control select2-hidden-accessible" required="" tabindex="-1" aria-hidden="true" aria-required="true"style="padding-left: 0;">
+									<!--<option value=""></option>-->
+									<option value="TW"> 台湾 (+886) </option>
+									<option value="UM">America (+1)</option>
+									<option value="CN" selected="">中国 (+86)</option>
+								</select>
+							</div>
+	                    </li>
+	                    <!--账号-->
+	                    <li>
+							<div class="form-group"style="margin-bottom: 0;">
+								<div class="input-icon">
+									<i class="glyphicon glyphicon-phone"></i>
+									<input name="phoneNumber" id="PHONENUMBER" onblur="checkText(this)" value="" type="text" autocomplete="off" placeholder="输入手机/邮箱" class="form-control placeholder-no-fix valid-true" required="" aria-required="true" aria-invalid="false">
+								</div>
+							</div>
+	                    </li>
+	                    <!--错误提示-->
+	                    <li id="phoneNumber" style="height: 20px;font-size: 16px;background-color: #fffbb5;color: red; text-align: center;visibility: hidden;border-radius:3px;"></li>
+	                    <!--图形验证-->
+	                    <li>
+							<div class="form-group" style="">
+								<div class="input-icon"style="width: 80px;display: inline-block;">
+									<i class="glyphicon glyphicon-send"></i>
+									<!--<input type="text" id="captcha" name="bean.captcha" value="" class="form-control valid-true" placeholder="图形验证码" minlength="4" maxlength="4" aria-invalid="false">-->
+									<input type="text" id="code_input" name="bean.captcha" value="" class="form-control valid-true" placeholder="图形验证" minlength="4" maxlength="4" aria-invalid="false"style="width: 80px;">
+								</div>
+								<!--<span class="input-group-btn">-->
+									<!--<img id="img_captcha" title="点击换一张" src="./美联sign up_files/captcha" style="cursor:pointer; width:87px;">-->
+									<!--<img id="v_container" title="点击换一张" src="" style="display: inline-block; cursor:pointer;height: 30px; width:87px;">-->
+									<div id="v_container"></div>
+									<!--<button id="send_phone_code" class="btn btn-success" type="button" link="/m/ssms/regist"> 发送验证码 </button>-->
+									<button id="my_button" class="btn btn-success" type="button" link="/m/ssms/regist"> 发送验证码 </button>
+								<!--</span>-->
+							</div>
+	                    </li>
+	                    <!--输入手机验证码-->
+	                    <li>
+							<div class="form-group"style="margin-bottom: 19px;">
+								<div class="input-icon">
+									<i class="glyphicon glyphicon-eye-open"></i>
+									<input type="text" name="bean.smsCaptcha" value="" class="form-control" placeholder="输入手机验证码" minlength="6" maxlength="6" required="" aria-required="true">
+								</div>
+							</div>
+	                    </li>
+	                    <!--密码-->
+	                    <li>
+							<div class="form-group"style="margin-bottom: 0;">
+								<div class="input-icon">
+									<i class="glyphicon glyphicon-lock"></i>
+									<input name="password" type="password" id="PASSWORD"  onblur="checkText(this)" autocomplete="off" placeholder="输入密码" class="form-control placeholder-no-fix" minlength="6" maxlength="12" required="" aria-required="true">
+								</div>
+							</div>
+	                    </li>
+	                    <!--错误提示-->
+	                    <li id="password" style="height: 20px;font-size: 16px;background-color: #fffbb5;color: red; text-align: center;visibility: hidden;border-radius:3px;"></li>
+	                    <!--重新输入密码-->
+	                    <li>
+							<div class="form-group"style="margin-bottom: 0;">
+								<div class="controls">
+									<div class="input-icon">
+										<i class="glyphicon glyphicon-lock"></i>
+										<input name="password2" id="PASSWORD2"  onblur="checkText(this)" type="password" autocomplete="off" placeholder="确认密码" equalto="#password" class="form-control placeholder-no-fix" required="" aria-required="true">
+									</div>
+								</div>
+							</div>
+	                    </li>
+	                    <!--错误提示-->
+	                    <li id="password2" style="height: 20px;font-size: 16px;background-color: #fffbb5;color: red; text-align: center;visibility: hidden;border-radius:3px;"></li>
+	                   
+	                    <li>
+	                        <button>注册</button>
+	                    </li>
+	                    <li>
+	                        <a href="login.html" style="float: left;">登录</a>
+	                        <a href="password_reset/ensure_accout.html" style="float: right;">忘记密码</a>
+	                    </li>
+	                </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+    <div class="container">
+        <p>****科技有限公司</p>
+        <p>Copyright &copy;1998-2017WEITE All Right Reserve</p>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.js"></script>
+
+<!--验证码插件-->
+<script src="js/gVerify.js"></script>
+<script>
+	var verifyCode = new GVerify("v_container");
+
+	document.getElementById("my_button").onclick = function(){
+		var res = verifyCode.validate(document.getElementById("code_input").value);
+		if(res){
+			alert("验证正确");
+		}else{
+			alert("验证码错误");
+		}
+	}
+</script>
+
+<script  type="text/javascript"  >
+//输入框失去焦点时检验输入内容是否有效
+function checkText(obj)
+{
+   //获取输入框的id值
+   var id= obj.name;
+   var text=document.getElementById(id.toString().toUpperCase()).value;
+   //判断是否为空
+   if(text.replace(/\s/g, "")=="")
+   {
+      document.getElementById(id).innerHTML="输入不能为空";
+      document.getElementById(id).style.visibility = "visible"
+      setTimeout(function(){
+      	document.getElementById(id).style.visibility = "hidden"
+      },3000)
+   }
+   else
+   {
+     //组装方法
+     //取首字母转换为大写,其余不变
+     var firstChar=id.charAt(0).toString().toUpperCase();
+     //
+     var strsub=id.substring(1,id.length);
+     var strMethod="check"+firstChar+strsub+"()";
+     var isTrue = eval(strMethod);
+     if(isTrue)
+     {
+         document.getElementById(id).innerHTML="输入有效";
+         document.getElementById(id).style.visibility = "visible"
+         setTimeout(function(){
+	      	document.getElementById(id).style.visibility = "hidden"
+	     },3000)
+     }
+   }
+}
+function checkPassword()
+{
+    var password = document.getElementById("PASSWORD").value;    
+    return true;
+}
+function checkPassword2()
+{
+     var id=document.getElementById("PASSWORD");
+     var id2=document.getElementById("PASSWORD2");
+     var password = id.value;    
+     var password2 = id2.value;
+     if(password!=password2)
+     {
+        document.getElementById(id.name).innerHTML="密码不一致";
+        document.getElementById(id.name).style.visibility = "visible"
+        setTimeout(function(){
+	      	document.getElementById(id.name).style.visibility = "hidden"
+	    },3000)
+        return false;
+     }
+     return true;    
+}
+function checkPhoneNumber()
+{
+// 利用正则表达式对输入数据匹配
+   var id=document.getElementById("PHONENUMBER");
+   var phone = id.value;     
+//匹配到一个非数字字符，则返回false 
+   var expr =  /\D/i;
+   if(expr.test(phone))
+   {
+      document.getElementById(id.name).innerHTML="不能输入非数字字符";
+      document.getElementById(id.name).style.visibility = "visible"
+      setTimeout(function(){
+      	document.getElementById(id.name).style.visibility = "hidden"
+      },3000)
+      return false;
+   }
+   if(phone.length<11||phone.length>12)
+  {
+    document.getElementById(id.name).innerHTML="电话号码长度有误";
+    document.getElementById(id.name).style.visibility = "visible"
+    setTimeout(function(){
+      	document.getElementById(id.name).style.visibility = "hidden"
+      },3000)
+    return false;
+  }
+   return true;
+}
+</script>
+<script src="js/common.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
